@@ -55,3 +55,26 @@
       at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
       at Readable.push (node:internal/streams/readable:390:5)
       at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
+4:49:10 PM [vite] Internal server error: Transform failed with 1 error:
+/home/workspace/src/App.jsx:6:57: ERROR: Unexpected backslash in JSX element
+  Plugin: vite:esbuild
+  File: /home/workspace/src/App.jsx:6:57
+  
+  Unexpected backslash in JSX element
+  4  |  function App() {
+  5  |    return (
+  6  |      <div className="relative min-h-screen font-[\"Manrope\",\"Inter\",system-ui] text-[#4b4c7b] bg-[radial-gradient(1000px_600px_at_50%_-200px,rgba(255,255,255,0.9),transparent)]">
+     |                                                           ^
+  7  |        {/* Parallax decorative scene */}
+  8  |        <ParallaxScene />
+  
+      at failureErrorWithLog (/home/workspace/node_modules/esbuild/lib/main.js:1472:15)
+      at /home/workspace/node_modules/esbuild/lib/main.js:755:50
+      at responseCallbacks.<computed> (/home/workspace/node_modules/esbuild/lib/main.js:622:9)
+      at handleIncomingPacket (/home/workspace/node_modules/esbuild/lib/main.js:677:12)
+      at Socket.readFromStdout (/home/workspace/node_modules/esbuild/lib/main.js:600:7)
+      at Socket.emit (node:events:508:28)
+      at addChunk (node:internal/streams/readable:559:12)
+      at readableAddChunkPushByteMode (node:internal/streams/readable:510:3)
+      at Readable.push (node:internal/streams/readable:390:5)
+      at Pipe.onStreamRead (node:internal/stream_base_commons:189:23)
